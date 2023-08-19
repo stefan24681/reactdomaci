@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 import { ValuteKontekst } from "../context/valute-kontekst";
 
@@ -21,7 +22,13 @@ export default function Proizvod({ proizvod }) {
             <p className="card-body">{opis}</p>
             <div className="card-footer d-flex space-between">
                 <h4>Cena: {kontekstCena}</h4>
-                <Button btnClass={"btn-success"} text="Kupi!" />
+                <Link
+                    to="/vise"
+                    style={{ textDecoration: "none", color: "whitesmoke" }}
+                >
+                    {" "}
+                    <Button text="Kupi!" />{" "}
+                </Link>
             </div>
         </li>
     );

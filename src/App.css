@@ -88,6 +88,23 @@ button {
   transition: background-color 1s ease;
 }
 
+.button2 {
+  background-color: #6b06ca;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 1s ease;
+  padding: 4px;
+}
+
+.button2:hover {
+  background-color: #461c22;
+}
+
 button:hover {
   background-color: #1c461e;
 }

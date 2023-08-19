@@ -13,8 +13,7 @@ const Footer = () => {
                     color: "green",
                 }}
             >
-                Današnji datum: {new Date().getFullYear()}.
-                {new Date().getMonth() + 1}.{new Date().getUTCDay() + 4}.
+                Današnji datum: {new Date().toLocaleDateString("en-GB")}
             </p>
 
             <p
