@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../projekat/components/Button";
 import Proizvodi from "../projekat/components/Proizvodi";
 
 //DB
 import { proizvodiDB } from "./db/proizvodiDB";
+import { valuteDB } from "./db/valuteDB";
 
 document.body.style.backgroundColor = "#282c34";
 document.body.style.color = "#eee";
 
 export default function Store() {
+    const [valuta, setValuta] = useState(valuteDB.Dinar);
+
     return (
         <div className="App-header">
             <h4>Promeni valutu:</h4>
-            <Button></Button>
+
+            {Object.values(valuteDB).map((val) => (
+                <Button
+                    key={val.label}
+                    text={val.code}
+                    onClick={() => setValuta(val)}
+                />
+            ))}
 
             <header className="text-center">
                 <h1 className="title">Rasprodaja</h1>
