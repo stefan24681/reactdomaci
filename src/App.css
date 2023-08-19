@@ -117,3 +117,7 @@
   border-radius: 50%;
   padding: 0.5rem 0.9rem;
 }
+
+.space-between {
+  justify-content: space-between;
+}

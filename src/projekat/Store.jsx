@@ -1,5 +1,9 @@
 import React from "react";
 import Button from "../projekat/components/Button";
+import Proizvodi from "../projekat/components/Proizvodi";
+
+//DB
+import { proizvodiDB } from "./db/proizvodiDB";
 
 document.body.style.backgroundColor = "#282c34";
 document.body.style.color = "#eee";
@@ -21,7 +25,7 @@ export default function Store() {
                     aperiam repellat repudiandae libero numquam exercitationem.
                 </p>
             </header>
-            {/* Proizvodi */}
+            <Proizvodi list={proizvodiDB} />
         </div>
     );
 }
