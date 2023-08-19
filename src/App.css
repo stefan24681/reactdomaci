@@ -65,37 +65,6 @@
   margin-top: 0;
 }
 
-/* CSS for pagination */
-.paginationBttns {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 1rem;
-  padding: 0;
-}
-
-.previousBttn,
-.nextBttn {
-  margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.paginationDisabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.paginationActive {
-  background-color: #333;
-  color: #fff;
-  border-radius: 50%;
-  padding: 0.5rem 0.9rem;
-}
-
 .space-between {
   justify-content: space-between;
 }
@@ -181,4 +150,56 @@ button:hover {
   font-weight: bold;
   margin: 0;
   color: black;
+}
+
+.new-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.new-navbar-brand {
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.new-navbar-toggle {
+  display: none;
+}
+
+.new-navbar-toggler {
+  cursor: pointer;
+}
+
+.new-navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.new-nav-item {
+  margin-right: 15px;
+}
+
+.new-nav-link {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.new-nav-link:hover {
+  opacity: 1;
+}
+
+.new-nav-link.active {
+  opacity: 1;
 }
