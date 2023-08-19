@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin: 20px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +28,92 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* Align cards to the left */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 10px;
+}
+
+.card-header {
+  background-color: maroon;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.card-body {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 3.75rem;
+  margin: 0.3rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+/* CSS for pagination */
+.paginationBttns {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.previousBttn,
+.nextBttn {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paginationDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationActive {
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem 0.9rem;
 }
