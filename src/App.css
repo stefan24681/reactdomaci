@@ -35,28 +35,6 @@
   /* Align cards to the left */
 }
 
-.card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin: 50px;
-  padding: 10px;
-}
-
-.card-header {
-  background-color: maroon;
-  color: white;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.card-body {
-  background-color: lightgrey;
-  padding: 10px;
-}
-
-.card-text {
-  margin-bottom: 5px;
-}
 
 .fw-bold {
   font-weight: bold;
@@ -143,4 +121,64 @@ button {
 
 button:hover {
   background-color: #1c461e;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card header */
+.card-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  color: black;
+}
+
+/* Card image */
+.card img {
+  height: 120px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: black;
+}
+
+/* Card footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+/* Card footer price */
+.card-footer h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0;
+  color: black;
 }

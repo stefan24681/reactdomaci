@@ -18,6 +18,18 @@ export default function Store() {
     return (
         <ValuteKontekst.Provider value={valuta}>
             <div className="App-header">
+                <header className="text-center">
+                    <h1 className="title">Rasprodaja</h1>
+                    <h2 className="subtitle">Pozuri i kupi na vreme!</h2>
+
+                    <p>
+                        Velika rasprodaja pena za brijanje! Iskoristite
+                        neverovatne ponude i uživajte u bliskim i udobnim
+                        brijanjima po povoljnim cenama! 🎉
+                    </p>
+                </header>
+                <Proizvodi list={proizvodiDB} />
+
                 <h4>Promeni valutu:</h4>
 
                 {Object.values(valuteDB).map((val) => (
@@ -27,20 +39,6 @@ export default function Store() {
                         onClick={() => setValuta(val)}
                     />
                 ))}
-
-                <header className="text-center">
-                    <h1 className="title">Rasprodaja</h1>
-                    <h2 className="subtitle">Pozuri i kupi na vreme!</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Explicabo optio officiis nesciunt eius et quae
-                        doloribus mollitia ducimus ipsum laboriosam. Sunt ea
-                        quasi sit, aperiam repellat repudiandae libero numquam
-                        exercitationem.
-                    </p>
-                </header>
-                <Proizvodi list={proizvodiDB} />
             </div>
         </ValuteKontekst.Provider>
     );
