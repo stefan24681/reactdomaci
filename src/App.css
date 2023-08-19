@@ -121,3 +121,7 @@
 .space-between {
   justify-content: space-between;
 }
+
+.liststyle {
+  list-style: none;
+}
